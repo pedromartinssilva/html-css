@@ -1,0 +1,57 @@
+<!--início 7:30 18/07-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1 id="title">Formulário</h1>
+            <p id="description">Por favor, preencha esse formulário!</p>
+        </div>
+    </header>
+    <main>
+        <form id="survey-form">
+            <fieldset class="info">
+                <p id="question"><strong>Começando por suas informações básicas!</strong></p>
+                <label id="name-label">Qual seu nome? <input id="name" type="text" placeholder="Bill Gates" required></label id="name-label">
+                <label id="email-label">Nos dê seu melhor e-mail! <input id="email" type="email" placeholder="bestdeveloperever@cinmail.com" required></label>
+                <label id="number-label">E qual sua idade? <input id="number" type="number" min="10" max="100" placeholder="00110010011"></label>
+            </fieldset>
+
+            <fieldset class="curso">
+                <select id="dropdown">
+                    <option>Sistemas de Informação</option>
+                    <option>Ciência da Computação</option>
+                    <option>Engenharia da Computação</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="turnos">
+                <p id="question"><strong>Em qual turno você está estudando?</strong></p>
+                <label><input id="matutino" value="matutino" type="radio" name="turno"> Integral</label>
+                <label><input id="vespertino" value="vespertino" type="radio" name="turno"> vespertino</label>
+                <label><input id="integral" value="integral" type="radio" name="turno"> Integral</label>
+            </fieldset>
+            
+            <fieldset class="motivo">
+                <p id="question"><strong>Qual motivo te levou a escolher esse curso?</strong></p>
+                <label><input id="dinheiro" value="dinheiro" type="checkbox"> Dinheiro</label>
+                <label><input id="paixao" value="paixao" type="checkbox"> Paixão</label>
+                <label><input id="obrigacao" value="obrigacao" type="checkbox"> Obrigação</label>
+                <label><input id="outro" value="outro" type="checkbox"> Outro</label>
+                <label>Nos conta mais!<textarea rows="5" cols="50"></textarea></label>
+            </fieldset>
+
+            <label>
+                <input id="submit" type="submit">
+            </label>
+        </form>
+    </main>
+</body>
+</html>
