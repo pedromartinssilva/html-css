@@ -3,7 +3,7 @@
 }
 
 html {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic';
 }
 
 .head {
@@ -20,15 +20,9 @@ fieldset {
     border-bottom: 2px solid rgb(127, 127, 127);
 }
 
-label {
+label, select {
     display: block;
     margin: 1rem 0;
-}
-
-input {
-    border: 1.5px solid rgb(127, 127, 127);
-    border-radius: 0.25rem;
-    box-shadow: ;
 }
 
 textarea {
@@ -40,10 +34,18 @@ textarea {
 #name, #email, #number {
     width: 100%;
     margin: 0.5rem auto;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.25);
 }
 
 #title, #description {
     margin: auto;
+    font-family: 'Franklin Gothic Medium';
+}
+
+#logo {
+    width: 10rem;
 }
 
 #submit {
